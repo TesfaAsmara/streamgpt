@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "read_chat\n\n read_chat (socket)\n\n\n\n\njoin_channel\n\n join_channel (nickname, token, channel)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "streamgpt",
+    "section": "",
+    "text": "git clone https://github.com/TesfaAsmara/streamgpt.git"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "streamgpt",
+    "section": "",
+    "text": "git clone https://github.com/TesfaAsmara/streamgpt.git"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "streamgpt",
+    "section": "How to use",
+    "text": "How to use\nTo stream messages from Twitch IRC you need to get a to token for authentication. To do that you need to:\n\nCreate a Twitch account\nGo to https://twitchapps.com/tmi/ to request an auth token for your Twitch account. You’ll need to click “Connect with Twitch” and “Authorize” to produce a token\n\nYour token should look something like “oauth:yj23Ds7BB97Hju85QYTenVox12x03”. Including your token, there’s two constants we’ll define for the connection to a Twitch channel’s chat feed:\n\nYour Twitch account nickname\nThe channel you want to join\n\nThe channel you want to join should be preceeded by a hashtag. So if I wanted to join https://www.twitch.tv/kaicenat, then I would pass in #kaicenat."
+  },
+  {
+    "objectID": "index.html#code",
+    "href": "index.html#code",
+    "title": "streamgpt",
+    "section": "Code",
+    "text": "Code\nfrom core import join_channel, read_chat\n\n# Enter your twitch nickname, token\nsocket = join_channel(nickname=\"streamgpt\", \n                        token=\"oauth:yj23Ds7BB97Hju85QYTenVox12x03\",  \n                        channel=\"#kaicenat\")\n\n# This will store the chat messages to a file named chat.log\nread_chat(socket)\n\n# close the socket when you're done reading messages\nsocket.close()"
+  }
+]
