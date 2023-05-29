@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "streamgpt"
+  site-url: "https://TesfaAsmara.github.io/streamgpt"
+  description: "StreamGPT: Live Streaming Generative Pre-trained Transformer Experiment"
+  repo-branch: main
+  repo-url: "https://github.com/TesfaAsmara/streamgpt"
