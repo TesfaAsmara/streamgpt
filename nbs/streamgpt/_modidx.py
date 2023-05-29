@@ -5,4 +5,5 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://TesfaAsmara.github.io',
                 'git_url': 'https://github.com/TesfaAsmara/streamgpt',
                 'lib_path': 'streamgpt'},
-  'syms': {'streamgpt.core': {'streamgpt.core.foo': ('core.html#foo', 'streamgpt/core.py')}}}
+  'syms': { 'streamgpt.core': { 'streamgpt.core.join_channel': ('core.html#join_channel', 'streamgpt/core.py'),
+                                'streamgpt.core.read_chat': ('core.html#read_chat', 'streamgpt/core.py')}}}
